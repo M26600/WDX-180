@@ -1,0 +1,12 @@
+table{
+    border: 1px solid yellow;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th, td{
+    border: 1px solid yellow;
+    background-color: rgb(233, 224, 147);
+    padding: 20px;
+}
