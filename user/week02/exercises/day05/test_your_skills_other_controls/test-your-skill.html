@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other form controls</title>
+</head>
+<body>
+    <textarea cols="30" rows="8"></textarea>
+    <label for="fruit">A simple select box: </label>
+    <select for="fruits">
+        <option>Banana</option>
+        <option>Cherry</option>
+        <option>Lemon</option>
+    </select>
+    <label for="fruits_vegetables">Select box with option groups:</label>
+    <select for="fruits_&_vegetables">
+        <optgroup label="fruits">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+            <option>Carrot</option>
+            <option>EggPlant</option>
+            <option>Potato</option>
+        </optgroup>
+    </select>
+    <label for="multi">Select box allowing multiple selections:</label>
+    <select multiple>
+        <option>Banana</option>
+        <option>Cherry</option>
+        <option>Lemon</option>
+    </select>
+    <p>
+    <label for="myFruit">What's your favorite fruit?</label>
+    <input type="text" name="myFruit" list="mySuggestion">
+    <datalist id="mySuggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+    </datalist>
+    </p>
+    <p>
+        <label for="myFruit2">What's your favorite fruit? (Withfallback)</label>
+        <input type="text" name="myFruit2" list="mySuggestion2">
+        <datalist id="mySuggestion2">
+            <label for="suggestion">or pick a fruit</label>
+            <select id="suggestion" name="altfruit">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Blackberry</option>
+                <option>Blueberry</option>
+                <option>Lemon</option>
+                <option>Lychee</option>
+                <option>Peach</option>
+                <option>Pear</option>
+            </select>
+        </datalist>
+    </p>
+    <p><button type="submit">Submit me!</button></p>
+    <p>
+        <meter min="0" max="100" value="75" low="33" high="66" optimum="0">75</meter>
+    </p>
+    <p>
+        <progress max="100" value="5">5/100</progress>
+    </p>
+</body>
+</html>

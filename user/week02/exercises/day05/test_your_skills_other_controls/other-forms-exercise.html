@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Fruit preferences</legend>
+            <input type="checkbox" name="cherry">I like cherry
+            <input type="checkbox" name="banana">I like banana
+            <input type="checkbox" name="both">I like strawberry
+        </fieldset>
+        <div>
+<input id="file" name="file" type="file" multiple/>
+<ul id="file-list"></ul>
+</div>
+    </form>
+    <script>
+       const fileInput = document.querySelector("#file");
+const fileList = document.querySelector("#file-list");
+
+fileInput.addEventListener("change", updateFileList);
+
+function updateFileList() {
+  while (fileList.firstChild) {
+    fileList.removeChild(fileList.firstChild);
+  }
+
+  const curFiles = fileInput.files;
+
+  if (!(curFiles.length === 0)) {
+    for (const file of curFiles) {
+      const listItem = document.createElement("li");
+      listItem.textContent = `File name: ${file.name}; file size: ${returnFileSize(file.size)}.`;
+      fileList.appendChild(listItem);
+    }
+  }
+}
+
+function returnFileSize(number) {
+  if (number < 1e3) {
+    return `${number} bytes`;
+  } else if (number >= 1e3 && number < 1e6) {
+    return `${(number / 1e3).toFixed(1)} KB`;
+  }
+  return `${(number / 1e6).toFixed(1)} MB`;
+}
+    </script>
+</body>
+</html>

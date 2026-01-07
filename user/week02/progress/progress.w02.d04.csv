@@ -1,6 +1,6 @@
-Week,Day,Concept,Task,Level,Confidence,Completed
-2,4,HTML Forms,Complete the 'Active learning: Implementing our form HTML' challenge,Beginner,10,TRUE
-2,4,HTML Forms,Complete the 'Basic form styling' challenge,Beginner,10,TRUE
-2,4,HTML Forms,Complete the 'Active learning: building a form structure' challenge,Beginner,10,TRUE
-2,4,HTML Forms,Complete the 'Building a form structure' challenge,Beginner,5,TRUE
-2,4,HTML Forms,Complete the 'Basic native form controls' guide,Beginner,10,TRUE
+Week,Day,Concept,Task,Level,Confidence,Completed,
+2,4,HTML Forms,Complete the 'Active learning: Implementing our form HTML' challenge,Beginner,10,TRUE,https://github.com/M26600/WDX-180/blob/main/user/week02/exercises/day04/your_first_form/first-form.html
+2,4,HTML Forms,Complete the 'Basic form styling' challenge,Beginner,10,TRUE,https://github.com/M26600/WDX-180/blob/main/user/week02/exercises/day04/your_first_form/first-form.html
+2,4,HTML Forms,Complete the 'Active learning: building a form structure' challenge,Beginner,10,TRUE,https://github.com/M26600/WDX-180/blob/main/user/week02/exercises/day04/test_your_skills_form_structure/payment-form.html
+2,4,HTML Forms,Complete the 'Building a form structure' challenge,Beginner,5,TRUE,https://github.com/M26600/WDX-180/blob/main/user/week02/exercises/day04/test_your_skills_form_structure/payment-form.html
+2,4,HTML Forms,Complete the 'Basic native form controls' guide,Beginner,10,TRUE,https://github.com/M26600/WDX-180/blob/main/user/week02/exercises/day04/test_your_skills_basic_controls/simple-exercisse.html

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Controls Official Page</title>
+</head>
+<body>
+    <p>
+  <label for="select">Choose your favorite fruit:</label>
+  <select id="select" name="fruit">
+    <optgroup label="Citrus">
+      <option value="orange">Orange</option>
+      <option value="lemon">Lemon</option>
+    </optgroup>
+    <optgroup label="Berries">
+      <option value="strawberry">Strawberry</option>
+      <option value="blueberry">Blueberry</option>
+    </optgroup>
+  </select>
+</p>
+
+<p>
+  <label for="textarea">Comments:</label>
+  <textarea id="textarea" name="comments" rows="4" cols="50" placeholder="Write something..."></textarea>
+</p>
+
+<fieldset>
+  <legend>Delivery options</legend>
+  <p>
+    <input type="radio" id="standard" name="delivery" value="standard">
+    <label for="standard">Standard (free)</label>
+  </p>
+  <p>
+    <input type="radio" id="express" name="delivery" value="express">
+    <label for="express">Express ($10)</label>
+  </p>
+</fieldset>
+</body>
+</html>

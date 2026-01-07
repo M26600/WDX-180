@@ -1,0 +1,6 @@
+input:valid+span::after{
+content: "Right"
+}
+input:invalid+span::after{
+content: "Wrong"
+}
