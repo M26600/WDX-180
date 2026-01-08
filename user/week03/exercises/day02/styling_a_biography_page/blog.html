@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Formatting a biography</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        margin: 0;
+        background-color: linear-gradient(to bottom, #f9f9ff, #ffffff); 
+    }
+
+      h1 {
+        color: hotpink;
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position:relative;
+        
+        padding-bottom: 10px;
+      }
+
+      h1::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: repeating-linear-gradient(
+            to right, purple 0,
+            purple 15px, transparent 15px, transparent 30px
+        );
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        transition: background-position 0.8s ease;
+      }
+        h1:hover::after{
+            background-position: 0 0;
+        }
+    
+
+      h2 {
+        font-size: 1.5em;
+        font-style: italic;
+        color:#72546d;
+      }
+
+      .job-title {
+        color: #999999;
+        font-weight: bold;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      a:link,
+      a:visited {
+        color: #fb6542;
+        text-decoration: none;
+        background-image: linear-gradient(transparent 50%, #fb6542 50%);
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        transition: background-size 0.3s ease;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: green;
+        background-size: 100% 2px;
+      }
+      ul{
+        background-color: #eeeeee;
+        border: 5px solid purple;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+        max-width: 400px;
+        margin: 20px auto;
+      }
+      ul:hover{
+        background-color: #e0e0ff;
+        transform:translateY(-5px);
+        transition: all 0.3s ease;
+      }
+      p{
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Jane Doe</h1>
+    <div class="job-title">Web Developer</div>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+    </p>
+
+    <h2>Contact information</h2>
+    <ul>
+      <li>Email:
+        <a href="mailto:jane@example.com">jane@example.com</a>
+      </li>
+      <li>Web:
+        <a href="http://example.com">http://example.com</a>
+      </li>
+      <li>Tel: 123 45678</li>
+    </ul>
+
+  </body>
+
+</html>
