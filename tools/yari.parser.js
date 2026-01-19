@@ -151,13 +151,22 @@ function removeNoteBlocks(textContent) {
   <!-- ```js-nolint example-bad -->
   ```js
 
-  and replace all occurrences of:
+  and replaces all occurrences of:
 
   ```js example-bad
 
   with the following:
 
   <!-- ```js example-bad -->
+  ```js
+
+  and replaces all occurrences of:
+
+  ```js example-good
+
+  with the following:
+
+  <!-- ```js example-good -->
   ```js
 
 */
@@ -196,6 +205,17 @@ function replaceJsNolintBlocks(textContent) {
     for (const match of jsExampleBadMatches) {
       ok("\nFound: " + match[0]);
       const replacement = `<!-- \`\`\`js example-bad${match[1]} -->\n\`\`\`js\n`;
+      textContent = textContent.replace(match[0], replacement);
+    }
+  }
+
+  const jsExampleGoodRegex = /(?<!<!--\s)```js example-good(.*)\n/g;
+
+  const jsExampleGoodMatches = textContent.matchAll(jsExampleGoodRegex);
+  if (jsExampleGoodMatches) {
+    for (const match of jsExampleGoodMatches) {
+      ok("\nFound: " + match[0]);
+      const replacement = `<!-- \`\`\`js example-good${match[1]} -->\n\`\`\`js\n`;
       textContent = textContent.replace(match[0], replacement);
     }
   }
@@ -379,6 +399,9 @@ function replaceJSXrefLinks(textContent, filename) {
     // TODO: Replace MDN domain with local resources/glossary path if available
     // TODO: Find when Global_Objects path is needed (.../Reference/Global_Objects/...)
     let baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/";
+    if ( p1.startsWith("Math.") ){
+      baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/";
+    }
     let link = "";
 
     const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
