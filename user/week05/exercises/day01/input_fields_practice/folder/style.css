@@ -1,0 +1,92 @@
+:root {
+    --bg-color: #282828;
+    --text-color: #d0d0d0;
+    --placeholder-color: #767676;
+    --border-normal: #4c4c4c;
+    --border-hover: #8f8f8f;
+    --border-focus: #7c9dbd;
+    --error-color: #862e2a;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.input-container:has(label:hover) input {
+    border-color: var(--border-hover);
+}
+
+label {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    flex-grow: 1;
+    background: transparent;
+    border: 1px solid var(--border-normal);
+    padding: 12px;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+
+input:hover {
+    border-color: var(--border-hover);
+}
+
+input:focus {
+    border-color: var(--border-focus);
+}
+
+
+input:invalid {
+    border-color: var(--error-color);
+}
+
+.char-counter {
+    color: var(--placeholder-color);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.error-message {
+    display: none; 
+    background-color: var(--error-color);
+    color: white;
+    padding: 8px 12px;
+    width: fit-content;
+    font-size: 0.85rem;
+}
+
+
+input:invalid:not(:placeholder-shown) ~ .error-message,
+.input-container:has(input:invalid:not(:placeholder-shown)) .error-message {
+    display: block;
+}
