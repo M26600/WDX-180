@@ -3,13 +3,15 @@
 /* Remove Spaces
 
   Data In:
-
+The data that goes inside is any string that the user wants to remove spaces from. It can be as long as they want, and it can be anything.
 
   Data Out:
-
+The final message that will be displayed, which is the input string with all spaces removed.
 
   Test Cases:
-
+When the user enters "hello world", the final message should be "helloworld".
+When the user enters "  spaced  ", the final message should be "spaced".
+When the user enters "noSpaces", the final message should be "noSpaces".
 
 */
 
