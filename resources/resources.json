@@ -1,6 +1,17 @@
 {
   "$schema": "./schemas/resources.schema.json",
   "resources": {
+    "ejs-cheatsheet": {
+      "title": "EJS (Embedded JavaScript) Cheatsheet",
+      "type": "Cheatsheet",
+      "creator": [
+        "https://github.com/Fechin"
+      ],
+      "identifier": "https://github.com/in-tech-gration/WDX-180/blob/main/resources/cheatsheets/ejs-cheatsheet.md",
+      "terms": [
+        "Templating"
+      ]
+    },
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
       "creator": [
@@ -1841,6 +1852,12 @@
       ],
       "language": [
         "en"
+      ],
+      "reviewers": [
+        {
+          "github": "https://github.com/asterisg",
+          "review": "As the guy on the video mentions 'This video is not on how to be a git newbie, but how to be a git expert.' All in all, great video, very explanatory, in-depth analysis of all the basic git features that a developer is gonna come across and gets it all covered in under an hour. However, since the video is suited for people with intermediate experience on git, this video in my opinion can be used as a later recap/revision on the tool and to clarify some of the features it provides. Mostly, due to the fact that there are no screenshots/clips using the commands on a terminal, I think it requires a great understanding of both git and the linux terminal."
+        }
       ]
     },
     "the-undersea-cable-that-linked-the-world": {
@@ -2202,6 +2219,19 @@
         "git",
         "branches",
         "interactive"
+      ]
+    },
+    "getting-started-what-is-git": {
+      "identifier": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F",
+      "title": "What is Git?",
+      "type": "Official Documentation",
+      "tags": [
+        "git"
+      ],
+      "reviewers": [
+        {
+          "rating": 0.8
+        }
       ]
     },
     "git-remotes-fundamentals": {
@@ -2917,6 +2947,7 @@
     },
     "what-is-a-software-post-mortem": {
       "type": "Blog Post",
+      "title": "What is a Software Post-Mortem and How Do You Write One?",
       "identifier": "https://www.freecodecamp.org/news/what-is-a-software-post-mortem/"
     },
     "react-workshop-2024---routing-101---intechgrationio": {
@@ -4435,6 +4466,53 @@
         "UI",
         "software",
         "development"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "typescript-cheat-sheets": {
+      "title": "TypeScript Cheat Sheets",
+      "type": "Cheatsheet",
+      "format": "application/zip",
+      "identifier": "https://www.typescriptlang.org/cheatsheets/",
+      "download": "curriculum/modules/javascript/typescript/docs/typescript-cheat-sheets.zip",
+      "size": 4167053,
+      "tags": [
+        "typescript",
+        "cheatsheet"
+      ]
+    },
+    "typescript-notes-for-professionals": {
+      "title": "TypeScript Notes for Professionals",
+      "type": "Official Documentation",
+      "format": "application/pdf",
+      "identifier": "https://www.goalkicker.com/TypeScriptBook2/TypeScriptNotesForProfessionals.pdf",
+      "download": "curriculum/modules/javascript/typescript/docs/TypeScriptNotesForProfessionals.pdf",
+      "size": 1199247,
+      "tags": [
+        "typescript",
+        "documentation",
+        "notes"
+      ]
+    },
+    "get-started-with-the-fetch-api": {
+      "type": "YouTube",
+      "duration": 514,
+      "title": "Get started with the Fetch API",
+      "date": "17/07/2017",
+      "youtube": {
+        "id": "Ncs6QI4Z5BE",
+        "channel_id": "UCTiRXlOapSWfu02rtOdaGvA",
+        "channel_title": "Jad Joubran",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ncs6QI4Z5BE/sddefault.jpg"
+      },
+      "tags": [
+        "fetch",
+        "javascript",
+        "best practices",
+        "modern web",
+        "ES2015"
       ],
       "language": [
         "en"
